@@ -1,0 +1,206 @@
+
+:root {
+    --main-color: #009AD8;
+    --second-color: #1E202B;
+    --second-color-opacity: rgba(30, 32, 43, 0.6);
+    --main-transition: .4s;
+    
+}
+
+
+.navbar ul li {
+    transition: var(--main-transition);
+    border-color: #009bd800 !important;
+}
+
+.navbar ul li:hover {
+    border-color: var(--main-color) !important;
+}
+
+.nav-item a {
+    transition: var(--main-transition);
+}
+
+.nav-item:hover a {
+    color: var(--main-color) !important;
+}
+
+.navbar {
+    background-color: var(--second-color);
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        background-color: var(--second-color);
+    }
+
+    .navbar-toggler {
+        border: 3px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.02);
+        margin: 20px 0px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .navbar-collapse ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.203) !important;
+        border-radius: 0 !important;
+    }
+
+    .navbar-collapse ul li a {
+        font-weight: normal !important;
+    }
+}
+/* ---------------------------------------------------------- */
+
+#weather_cards {
+    min-height: 100vh;
+    background-image: url("../images/topic-london-gettyimages-760251843-feature.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#weather_cards .container {
+
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_container {
+
+    padding: 16px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search_container button.confirm_search_btn {
+    background-color:var(--main-color);
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px !important;
+}
+
+.search_container button.confirm_search_btn:hover {
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+
+.search_container input {
+    padding: 16px;
+    border: none;
+    background-color: #1E202B;
+    color: var(--main-color) !important;
+}
+
+.search_container input:focus {
+    background-color: var(--second-color);
+    outline: 2px solid var(--main-color);
+}
+
+.search_container input::placeholder {
+    color: var(--bs-gray-600);
+}
+
+/* --------------------------------------------------------- */
+
+#allData {
+    width: 100% !important;
+}
+
+.date_container {
+    background-color: #222530;
+}
+
+.date_container span {
+    color: rgb(191, 193, 200) !important;
+}
+
+.status_condition {
+    text-align: center;
+    color: #009AD8;
+    background-color: #222530;
+}
+
+.single_card{
+    background-color: #323544;
+}
+
+.status_icon {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.weather_degree_td {
+    color: white;
+    font-size: 90px;
+    font-weight: bolder;
+    /* background-color: rgba(0, 0, 0, 0.368); */
+    padding-top: 0px;
+    border-radius: 8px;
+
+}
+
+.icons_container {
+    padding: 11px;
+    border-radius: 16px;
+    background-color: #323544;
+}
+
+
+.icon {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #1E202B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    margin-right: 10px;
+}
+
+.icon:hover i {
+    color: white;
+}
+
+.icon:hover {
+    background-color: #009AD8;
+}
+
+.icon i {
+    color: #009AD8;
+    font-size: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+
+/* --------------------------------------------------------- */
+footer {
+    background-color: var(--second-color);
+}
+
+footer span {
+    color: var(--main-color);
+}
+
+@media screen and (min-width:0px) and (max-width:768px) {
+    .search_container{
+        margin-top:60px; 
+    }
+    }
